@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year Animation</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head> 
+<body>
+ <div class="feliz">Happy new year</div>
+<div class="new-year-container">
+  <span>202</span>
+  <span class="year-digit1">3</span>
+  <span class="year-digit2">4</span>
+  <div class="celebration-balloon"></div>
+  
+</div>
+    <span><i></i></span>
+    <span><i></i></span>
+    <span><i></i></span>
+  </div>
+  <div class="f4">
+    <span><i></i></span>
+    <span><i></i></span>
+    <span><i></i></span>
+  </div>
+</div>
+
+<div class="snowfall"></div>
+
+
+<script>  
+// Create snowflakes dynamically
+const snowfallContainer = document.querySelector('.snowfall');
+for (let i = 0; i < 50; i++) {
+  const snowflake = document.createElement('div');
+  snowflake.className = 'snowflake';
+  snowflake.style.left = `${Math.random() * 100}vw`;
+  snowflake.style.animationDuration = `${Math.random() * 2 + 1}s`;
+  snowfallContainer.appendChild(snowflake);
+}
+</script>
+</body>
+</html>
